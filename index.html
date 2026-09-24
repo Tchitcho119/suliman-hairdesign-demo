@@ -179,6 +179,10 @@
     .btn--outline:hover,
     .btn--outline:focus-visible { border-color: var(--text-primary); }
 
+    @media (max-width: 600px) {
+      .btn { min-height: 44px; padding: 11px 20px; }
+    }
+
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
     /* ============================================================
@@ -393,8 +397,8 @@
     @media (max-width: 600px) {
       .services-grid { grid-template-columns: 1fr; }
       .services-footer { flex-direction: column; align-items: flex-start; }
-      .services-footer-actions { width: 100%; }
-      .services-footer-actions .btn { flex: 1; }
+      .services-footer-actions { width: 100%; flex-direction: column; }
+      .services-footer-actions .btn { width: 100%; }
     }
 
     /* ============================================================
